@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首頁</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="app">
+        <!-- banner 1280*256 (5:1) -->
+        <div class="banner"><img :src="bannerPath"></div>
+
+        <nav>
+            <div class="choose-type">
+                <span class="choose-title">類別：</span>
+                
+                <select v-model="choose">
+                    <option>全部</option>
+                    <option v-for="type in types">{{ type }}</option>
+                </select>
+            </div>
+        </nav>
+
+        <main>
+            <!-- 商品 -->
+            <div class="prod" v-for="item in chooselist">
+                <div class="prod-img">
+                    <!-- 圖片 285*200 -->
+                    <img :src="item.imgPath">
+                </div>
+                
+                <div class="prod-con">
+                    <div class="prod-title">{{ item.name }}</div>
+                    <span class="prod-des">{{ item.des }}</span>
+                </div>
+
+                <div class="prod-footer">
+                    <a :href="item.url" role="botton" target="_blank">&nbsp;&nbsp;詳細內容</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <!-- js -->
+    <script src="js/vue.min.js"></script>
+    <!-- <script src="js/vue.dev.js"></script> -->
+    <script src="js/main.js"></script>
+</body>
+</html>

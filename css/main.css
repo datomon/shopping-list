@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+/********* common ********/
+html, body, ul, li {
+    padding: 0;
+    margin: 0;
+}
+
+a { text-decoration: none;}
+
+body {
+    background-color: #fffeec;
+    font-family: "微軟正黑體";
+}
+
+.banner { 
+    width: 1280px;
+    height: 256px;
+    margin: 0 auto;
+}
+
+/****** nav ******/
+nav {
+    height: 3em;
+    background-color: #aeddcd; 
+    box-shadow: 1px 3px 4px rgba(0, 0, 0, .1);
+}
+
+.choose-type {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 0.8em 1em 1em 1em;
+    box-sizing: border-box;
+}
+
+.choose-title {
+    font-weight: bold;
+}
+
+.choose-type select {
+    width: 100px;
+    padding: 4px;
+    border-radius: 8px;
+    position: relative;
+    top: -2px;
+    left: 0; 
+}
+
+.choose-type select:focus {
+    outline: none;
+}
+
+/****** 下半部內容 ******/
+main {
+    width: 1280px;
+    height: 30em;
+    margin: 2em auto; 
+    display: flex;
+    justify-content: stretch;
+    flex-wrap: wrap;    /*子元素自動換行*/
+}
+
+/* 商品 */
+.prod {
+    width: 285px;
+    height: 400px;
+    border: 1px solid rgba(65, 64, 64, .5);
+    margin-bottom: 45px;
+    margin-left: 44px;
+    border-radius: 0 0 8px 8px;
+    background-color: white;
+    transition: all .3s;
+}
+
+.prod:nth-child(4n+1) {
+    margin-left: 0;
+}
+
+.prod:hover {
+    box-shadow: 2px 4px 15px rgba(0, 0, 0, .4);
+}
+
+.prod-img {
+    border-bottom: 1px solid rgba(65, 64, 64, .5);
+}
+
+.prod img {
+    width: 100%;
+    height: 200px;
+}
+
+.prod-con {
+    width: 100%;
+    height: 135px;
+    box-sizing: border-box;
+    padding: 1em;
+}
+
+.prod-title {
+    font-weight: bold;
+    font-size: 130%;
+    color: #e4508f;
+    margin-bottom: .5em;
+}
+
+.prod-footer {
+    padding: 1em;
+    text-align: right;
+}
+
+.prod-footer a {
+    margin-right: .1em;
+    padding: .3em 1em .3em 0;
+    background-color: #556fb5;
+    border-radius: 8px;
+    position: relative;
+    transition: all .3s;
+}
+
+.prod-footer a, 
+.prod-footer a:hover,
+.prod-footer a:link,
+.prod-footer a:active {
+    color: white;
+}    
+
+.prod-footer a:before {
+    content: '▶';
+    padding: .3em .7em .3em .8em;
+    background-color: #293966;
+}
+
+.prod-footer a:hover {
+    top: -1px;
+    left: 2px;
+    background-color: #3e589e;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, .5);
+}

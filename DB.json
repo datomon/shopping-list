@@ -1,0 +1,41 @@
+{
+    "bannerPath": "images/banner/banner.jpg",
+    "types": ["配件", "手機"],
+    "list": [
+        {
+            "type": "手機",
+            "name": "oppa 手機A",
+            "des": "歷經數百次調教配色，兩種經典顏色，熱情自信的紅色、沉穩高雅的黑色，3D鏡面機身設計，引領美的趨勢。",
+            "imgPath": "images/items/444.jpg",
+            "url": "https://www.oppo.com/tw/smartphone-ax5s/"
+        },
+        {
+            "type": "手機",
+            "name": "小米手機B",
+            "des": "圓融的水滴屏，來自主流旗艦偏愛的全面屏方案，小水滴還巧妙藏起了前置鏡頭，看起來整潔舒服。",
+            "imgPath": "images/items/555.jpg",
+            "url": "https://www.mi.com/tw/redmi-note-7/?utm_source=pc&utm_medium=banner&utm_campaign=redmi-note-7"
+        },
+        {
+            "type": "配件",
+            "name": "傳輸線 C2",
+            "des": "24K鍍金端子頭，具備高傳導不易氧化特性，高純度銅導體。",
+            "imgPath": "images/items/111.jpg",
+            "url": "https://24h.pchome.com.tw/prod/DCAC2U-A77160562"
+        },
+        {
+            "type": "配件",
+            "name": "手機變壓器 K94",
+            "des": "小體積方便攜帶外型小巧，插頭可折疊設計，放於隨身包中，可折疊插頭不佔空間方便攜帶。",
+            "imgPath": "images/items/222.jpg",
+            "url": "https://24h.pchome.com.tw/prod/DYAF9E-A90098P0D?fq=/S/DYAF69"
+        },
+        {
+            "type": "配件",
+            "name": "Sony 耳機",
+            "des": "可播放高達 120 Hz 的高解析音樂。給您無可匹敵的音純粹、精準音效。",
+            "imgPath": "images/items/333.jpg",
+            "url": "https://mall.pchome.com.tw/prod/QAAP22-A90092BS3?fq=/S/QAAP22"
+        }
+    ]
+}
