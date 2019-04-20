@@ -2,15 +2,15 @@
 <html lang="zh-Hant-TW">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>首頁</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <div id="app">
-        <!-- banner 1280*256 (5:1) -->
-        <div class="banner"><img :src="bannerPath"></div>
+        <div class="banner imgcommon" :style="{ backgroundImage: 'url(' + bannerPath + ')' }"></div>
 
         <nav>
             <div class="choose-type">
@@ -26,10 +26,7 @@
         <main>
             <!-- 商品 -->
             <div class="prod" v-for="item in chooselist">
-                <div class="prod-img">
-                    <!-- 圖片 285*200 -->
-                    <img :src="item.imgPath">
-                </div>
+                <div class="prod-img imgcommon" :style="{ backgroundImage: 'url(' + item.imgPath + ')' }"></div>
                 
                 <div class="prod-con">
                     <div class="prod-title">{{ item.name }}</div>
@@ -42,10 +39,13 @@
             </div>
         </main>
     </div>
+
+    <img src="images/gotop.png" class="gotop">
     
     <!-- js -->
     <script src="js/vue.min.js"></script>
     <!-- <script src="js/vue.dev.js"></script> -->
     <script src="js/main.js"></script>
+    <script src="js/gotop.js"></script>
 </body>
 </html>

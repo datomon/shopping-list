@@ -19,7 +19,8 @@ let vm = new Vue({
         }
     },
     computed: {
-        chooselist() {  //篩選類型
+        //篩選商品類型
+        chooselist() {  
             if(this.choose !== '全部') {
                 return this.list.filter(item => {
                     return item.type === this.choose;
