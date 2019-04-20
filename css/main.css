@@ -133,7 +133,7 @@ main {
 
 /*回頂點按鈕*/
 .gotop{
-	/* display: none; */
+	display: none;
 	position: fixed;
 	bottom:1.5em;
 	right: 1.2em;
