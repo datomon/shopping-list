@@ -9,7 +9,7 @@ window.addEventListener('scroll', () => {
 
     if (!ticking) {
         window.requestAnimationFrame(() => {
-        showButton(scroll_position);  //判斷按鈕要不要顯示
+        showButton(scroll_position, gotopbtn);  //判斷按鈕要不要顯示
         ticking = false;
       });
     }
@@ -19,11 +19,12 @@ window.addEventListener('scroll', () => {
 
 //判斷捲軸高度，決定是否要顯示按鈕
 // height => 捲軸拉把頂點到網頁文件的頂點長度
-function showButton(height) {
+// ele => 要被隱藏或顯示的 DOM節點
+function showButton(height, ele) {
     if(height > 250){
-        gotopbtn.style.display = 'block';
+        ele.style.display = 'block';
     }else{
-        gotopbtn.style.display = 'none';
+        ele.style.display = 'none';
     }
 }
 

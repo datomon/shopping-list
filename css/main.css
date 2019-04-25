@@ -26,7 +26,7 @@ body {
 
 /**************************** ele styles ******************************/
 /*--------- mobile ----------*/
-/*banner*/
+/****** banner ******/
 .banner { 
     height: 200px;
     margin: 0 auto;
@@ -69,7 +69,7 @@ nav {
 main {
     margin: 2em auto; 
     display: flex;
-    justify-content: stretch;
+    /* justify-content: stretch; */
     flex-wrap: wrap;    /*子元素自動換行*/
 }
 
@@ -145,7 +145,7 @@ main {
 
 
 
-/*--------- 營幕尺寸大於768px時(最小至少768px時，iPad 等平版以上) ---------*/
+/*--------- 營幕尺寸以上 768px 時(最小至少768px時，iPad 等平版) ---------*/
 @media screen and (min-width: 768px) {
     /****** nav ******/
     .choose-type select {
@@ -160,14 +160,14 @@ main {
         margin-left: 6.66%;
     }
 
-    .prod:nth-child(2n+1) {
+    /* .prod:nth-child(2n+1) {
         margin-right: 0;
-    }
+    } */
 }
 
 
 
-/*--------- 營幕尺寸大於768px時(最小至少1280時，營幕以上) ---------*/
+/*--------- 營幕尺寸  1280px以上時(最小至少1280時，營幕) ---------*/
 @media screen and (min-width: 1280px) {
     /*banner*/
     .banner { 
@@ -187,9 +187,10 @@ main {
     
     /* 商品 */
     .prod {
-        width: 285px;
+        /* width: 285px; */
         height: 400px;
         margin: 0 auto 2em;
+        flex-basis: 285px;
     }
     
     .prod:nth-child(4n+1) {

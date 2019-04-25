@@ -10,8 +10,8 @@ let vm = new Vue({
         //取得 json 檔資料
         getJson() {
             fetch('DB.json')
-            .then((res) => res.json())
-            .then((data) => {
+            .then(res => res.json())
+            .then(data => {
                 this.bannerPath = data.bannerPath;
                 this.types = data.types;
                 this.list = data.list;
